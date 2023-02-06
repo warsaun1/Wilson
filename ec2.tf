@@ -1,7 +1,5 @@
-resource "aws_instance" "myec" {
-    ami = var.ins_ami
-    instance_type = var.ins_type
-  }
-  output  "myec2ip" {
-    value = aws_instance.myec.private_ip
-  }
+resource "aws_instance" "myname" {
+  ami = "ami-0ab0629dba5ae551d"
+  instance_type = "t2.micro"
+  
+}
